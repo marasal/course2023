@@ -172,7 +172,7 @@ nav a:hover::after {
 .buttonAppear,
 .main-banner h1,
 .main-banner p,
-.main-banner h2 {
+.main-banner h2, .text-content p, .text-content h2, .overlay-text {
     animation: appear 1s ease-out forwards; /* Apply the appearing animation */
 }
 
