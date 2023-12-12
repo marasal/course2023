@@ -261,6 +261,8 @@ button#contactBtn {
     font-size: 16px; /* Set the desired font size */
     font-weight: bold; /* Set the desired font weight */
     text-decoration: none; /* Remove the default underline */
+    color: #fff; /* White text */
+
 }
 #contactBtn a:visited {
     color: #fff; /* White text for visited link */
