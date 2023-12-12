@@ -1,0 +1,416 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2; /* Light gray background */
+    color: #333; /* Dark gray text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Ensure space between header, content, and footer */
+    min-height: 100vh; /* Minimum height to fill the viewport */
+    background-color: #E9E9E9;
+}
+header {
+    background-color: rgba(51, 51, 51, 0.2); /* Dark gray header with 70% opacity */
+   /* background-color: rgba(168,168,168, 0.8); /* Dark gray header with 70% opacity */
+    color: #fff; /* White text in header */
+    padding: 1em;
+    width: 100%;
+    position: fixed; /* Fixed position at the top */
+    top: 0;
+    display: flex;
+    justify-content: space-between; /* Updated to space-between */
+    align-items: center;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+.light-bar  {
+    background-color: rgba(51, 51, 51, 0.0);
+    color: #fff;
+    padding: 1em;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    border-bottom: 1px solid;
+    z-index: 2;
+}
+/* Change the background color on scroll or hover if needed */
+
+
+
+.logo {
+    margin-left: 40px; /* Adjust the margin to your preference */
+}
+
+.logo img {
+    max-width: 100px; /* Adjust the max width of your logo */
+}
+.logo img {
+    max-width: 100px; /* Adjust the max width of your default logo */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+.logo:hover img {
+    transform: scale(.8); /* Increase the size on hover (adjust as needed) */
+    /* Change the image source to your alternate logo */
+    content: url('maram.png');
+    max-width: 100px; /* Adjust the max width of your logo */
+
+}
+nav {
+    text-align: right;
+    margin-right: 20px; /* Add margin to the right */
+}
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff; /* White text in the navigation bar */
+    font-weight: bold;
+    font-size: 16px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #0000fe; /* Blue on hover */
+}
+
+nav a:hover::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #0000fe; /* Blue underline on hover */
+    bottom: -5px;
+}
+
+.main-section {
+    text-align: left;
+    margin: 70px 20px 20px; /* Adjusted margin on top, left, and right */
+}
+
+.main-banner {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: space-between;
+    text-align: left;
+    width: 100%; /* Adjust the width to your preference */
+    margin: 0 auto; /* Center the main banner by adding auto margin to left and right */
+}
+
+.banner-content {
+    display: flex;
+    align-items: center; /* Center vertically */
+    max-width: 100%; /* Allow the content to take up the full width */
+}
+
+.text-content {
+    max-width: 60%; /* Adjust the max width of the text content */
+}
+
+.image {
+    margin-top: 100px; /* Adjust the margin-top to move the image down */
+}
+
+.image img {
+    max-width: 80%; /* Ensure the image fills its container */
+}
+
+.banner-text {
+    max-width: 600px; /* Adjust the max width of the text content */
+}
+
+.text-content {
+    max-width: 400px; /* Adjust the max width of the text content */
+}
+
+
+.main-banner h1,
+.main-banner p,
+#contactBtn {
+    opacity: 0;
+}
+.main-banner h1 {
+    font-size: 48px; /* Adjust the font size as needed */
+}
+
+.buttonAppear {
+    margin-top: 40px;
+    animation: appear 1s ease-out forwards; /* Keep the final state */
+}
+
+.main-banner h3 {
+    font-size: 24px; /* Adjust the font size as needed */
+    margin-bottom: 10px; /* Adjust the margin as needed */
+    color: #333; /* Dark gray text color */
+    opacity: 0; /* Set initial opacity to 0 for the appearing effect */
+}
+.main-banner h1,
+.main-banner h3,
+.main-banner p {
+    margin-bottom: 0; /* Remove the default margin-bottom */
+    line-height: 1; /* Set line-height to eliminate spacing between lines */
+}
+
+.buttonAppear,
+.main-banner h1,
+.main-banner p,
+.main-banner h2 {
+    animation: appear 1s ease-out forwards; /* Apply the appearing animation */
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hoverEffect {
+    background-color: #0000fe; /* Initial background color */
+    color: #fff; /* Initial text color */
+    padding: 12px 25px; /* Adjusted padding */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hoverEffect:hover {
+    background-color: #fff; /* White on hover */
+    color: #0000fe; /* Blue text on hover */
+}
+
+footer {
+    background-color: #333; /* Dark gray footer */
+    color: #fff; /* White text in footer */
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+}
+
+
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer {
+    background-color: #333; /* Dark gray footer */
+    color: #fff; /* White text in footer */
+    padding: 2em;
+    text-align: center;
+    width: 100%;
+    position: fixed; /* Fixed position at the bottom */
+    bottom: 0;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+.social-icons a {
+    display: inline-block;
+    margin: 0 15px;
+    color: #fff; /* White color for the icons */
+    font-size: 30px; /* Larger icon size */
+    transition: color 0.3s ease; /* Smooth transition on hover */
+}
+.social-icons a:hover {
+    color: #0000fe; /* Blue color on hover */
+}
+
+button#contactBtn {
+    background-color: #0000fe; /* Blue color */
+    color: #fff; /* White text */
+    padding: 15px 30px; /* Adjust padding as needed */
+    font-size: 18px; /* Adjust font size as needed */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+#contactBtn a {
+    font-family: 'Raleway', sans-serif; /* Set the desired font family */
+    font-size: 16px; /* Set the desired font size */
+    font-weight: bold; /* Set the desired font weight */
+    text-decoration: none; /* Remove the default underline */
+}
+#contactBtn a:visited {
+    color: #fff; /* White text for visited link */
+}
+
+button#contactBtn:hover {
+    background-color: #fff; /* White background on hover */
+    color: #0000fe; /* Blue text on hover */
+}
+#contactBtn a:visited:hover {
+    background-color: #fff; /* White background on hover */
+    color: #0000fe; /* Blue text on hover */
+}
+#contactBtn:visited {
+    color: #fff; /* White text for visited link */
+}
+
+
+
+/* Your existing styles remain unchanged */
+
+.main-section {
+    text-align: center;
+    margin: 70px 20px 20px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-form form {
+    text-align: left;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #0000fe;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #fff;
+    color: #0000fe;
+}
+
+
+
+/*about*/
+
+.about-image img {
+    max-width: 100%; 
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%; 
+    left: 20%;  
+    right: 20%;  
+    text-align: center;
+    font-size: 48px; /* Adjust the font size as needed */
+
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+
+  .scanned-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.banner-content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px; /* Adjusted max-width */
+    width: 100%;
+    margin: 0 auto;
+}
+
+.text-content {
+    max-width: 70%; /* Adjusted max-width */
+}
+
+.image {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.image img {
+    max-width: 100%; /* Adjusted max-width */
+}
+
+.banner-text {
+    max-width: 800px; /* Adjusted max-width */
+}
+
+.text-content {
+    max-width: 600px; /* Adjusted max-width */
+}
+
+
+.aboutP {
+    font-size: 18px; /* Adjust font size as needed */
+    line-height: 1.6; /* Adjust line height for better readability */
+    color: #333; /* Dark gray text color */
+    margin-bottom: 20px; /* Add spacing at the bottom for better separation */
+    text-align: justify; /* Add this line to justify the text */
+
+}
+
+.scrolled-header {
+    background-color: rgba(168,168,168, 0.8); /* Add your desired background color and opacity */
+    border-bottom: 0px;
+
+}
