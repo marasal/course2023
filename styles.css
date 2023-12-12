@@ -276,6 +276,10 @@ button#contactBtn:hover {
     background-color: #fff; /* White background on hover */
     color: #0000fe; /* Blue text on hover */
 }
+#contactBtn a:hover {
+    background-color: #fff; /* White background on hover */
+    color: #0000fe; /* Blue text on hover */
+}
 #contactBtn:visited {
     color: #fff; /* White text for visited link */
 }
